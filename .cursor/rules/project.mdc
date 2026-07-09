@@ -1,0 +1,29 @@
+---
+alwaysApply: true
+---
+
+# mouse_trap / unavoidably unsafe clone
+
+## Path
+`/Users/bbp/mouse_trap`
+
+## Purpose
+Clone of https://unavoidablyunsafe.com/ — landing page for "unavoidably unsafe" game/product with email signup.
+
+## Stack
+- Next.js 15 (App Router)
+- TypeScript
+- CSS Modules
+- Deploy target: Vercel
+
+## Conventions
+- Match original site copy, layout, and styling (Poppins, red accent highlights, hero background image)
+- Keep components in `components/`, page in `app/`
+- Static assets in `public/`
+
+## Active work
+- Initial clone built and ready for Vercel deployment
+
+## Notes
+- Email form is client-side only (no backend yet)
+- Original is Squarespace; accent color ~ hsl(354, 99%, 47%)

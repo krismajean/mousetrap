@@ -1,0 +1,45 @@
+.header {
+  position: fixed;
+  inset: 0 0 auto;
+  z-index: 20;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2.5vw var(--page-padding);
+  background: transparent;
+}
+
+.headerLogo {
+  height: 101px;
+  width: auto;
+}
+
+.headerSocial {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.instagramLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  color: var(--white);
+  transition: opacity 0.2s ease;
+}
+
+.instagramLink:hover {
+  opacity: 0.75;
+}
+
+@media (max-width: 767px) {
+  .header {
+    padding: 6vw var(--page-padding);
+  }
+
+  .headerLogo {
+    height: 30px;
+  }
+}

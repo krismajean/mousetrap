@@ -1,0 +1,88 @@
+.hero {
+  position: relative;
+  min-height: 100svh;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+}
+
+.heroBackground {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.heroImage {
+  object-fit: cover;
+  object-position: 75% 42%;
+}
+
+.heroOverlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(171deg, rgba(0, 0, 0, 0.55) 0%, rgba(240, 18, 60, 0.35) 100%),
+    rgba(0, 0, 0, 0.15);
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 2560px;
+  margin: 0 auto;
+  padding: 8rem var(--page-padding) 4rem;
+  display: grid;
+  gap: 1.5rem;
+}
+
+.heroTextBlock {
+  max-width: 42rem;
+  margin-left: auto;
+}
+
+.headline {
+  margin: 0;
+  font-size: var(--heading-2-size);
+  font-weight: 500;
+  line-height: 1.15;
+  letter-spacing: -0.02em;
+  white-space: pre-wrap;
+}
+
+.subheadline {
+  margin: 0;
+  font-size: var(--heading-4-size);
+  font-weight: 400;
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+.emailPrompt {
+  margin: 0;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .heroContent {
+    grid-template-columns: 1fr;
+    justify-items: end;
+    padding-top: 10rem;
+  }
+
+  .heroTextBlock {
+    width: min(100%, 38rem);
+  }
+}
+
+@media (max-width: 767px) {
+  .heroContent {
+    padding-top: 7rem;
+  }
+
+  .heroTextBlock {
+    margin-left: 0;
+  }
+}
