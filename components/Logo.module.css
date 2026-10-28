@@ -7,13 +7,9 @@
 }
 
 .mark {
-  width: 2.25rem;
-  height: 2.25rem;
+  width: 2.5rem;
+  height: auto;
   flex-shrink: 0;
-}
-
-.accentBar {
-  fill: var(--accent);
 }
 
 .wordmark {
@@ -36,8 +32,7 @@
 
 @media (max-width: 767px) {
   .mark {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 1.75rem;
   }
 
   .wordmark {
