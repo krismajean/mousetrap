@@ -34,9 +34,15 @@
   transition: background 0.2s ease, color 0.2s ease;
 }
 
-.button:hover {
+.button:hover:not(:disabled) {
   background: var(--white);
   color: var(--black);
+}
+
+.button:disabled,
+.input:disabled {
+  opacity: 0.65;
+  cursor: wait;
 }
 
 .message,

@@ -7,18 +7,51 @@ import formStyles from "./EmailForm.module.css";
 
 export function Hero() {
   const [email, setEmail] = useState("");
-  const [status, setStatus] = useState<"idle" | "success" | "error">("idle");
+  const [honeypot, setHoneypot] = useState("");
+  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">(
+    "idle",
+  );
+  const [errorMessage, setErrorMessage] = useState(
+    "Please enter a valid email address.",
+  );
 
-  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
 
     if (!email.trim() || !email.includes("@")) {
+      setErrorMessage("Please enter a valid email address.");
       setStatus("error");
       return;
     }
 
-    setStatus("success");
-    setEmail("");
+    setStatus("loading");
+
+    try {
+      const response = await fetch("/api/subscribe", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, website: honeypot }),
+      });
+
+      const data = (await response.json().catch(() => ({}))) as {
+        error?: string;
+      };
+
+      if (!response.ok) {
+        setErrorMessage(
+          data.error || "Something went wrong. Please try again.",
+        );
+        setStatus("error");
+        return;
+      }
+
+      setStatus("success");
+      setEmail("");
+      setHoneypot("");
+    } catch {
+      setErrorMessage("Something went wrong. Please try again.");
+      setStatus("error");
+    }
   }
 
   return (
@@ -70,20 +103,35 @@ export function Hero() {
               }}
               className={formStyles.input}
               required
+              disabled={status === "loading"}
             />
-            <button type="submit" className={formStyles.button}>
-              Sign Up
+            <input
+              type="text"
+              name="website"
+              value={honeypot}
+              onChange={(event) => setHoneypot(event.target.value)}
+              className="sr-only"
+              tabIndex={-1}
+              autoComplete="off"
+              aria-hidden="true"
+            />
+            <button
+              type="submit"
+              className={formStyles.button}
+              disabled={status === "loading"}
+            >
+              {status === "loading" ? "Signing up…" : "Sign Up"}
             </button>
           </form>
 
           {status === "success" && (
             <p className={formStyles.message} role="status">
-              Thanks! We&apos;ll be in touch.
+              Thanks! Check your inbox — we&apos;ll be in touch.
             </p>
           )}
           {status === "error" && (
             <p className={formStyles.error} role="alert">
-              Please enter a valid email address.
+              {errorMessage}
             </p>
           )}
         </div>

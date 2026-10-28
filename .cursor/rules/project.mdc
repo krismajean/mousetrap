@@ -27,7 +27,8 @@ Clone of https://unavoidablyunsafe.com/ — landing page for "unavoidably unsafe
 ## Notes
 - Production URL: https://unavoidably-unsafe.vercel.app / https://www.mousetrapjenga.com
 - Vercel project: `unavoidably-unsafe` (team `krismajeans-projects`)
-- Email form is client-side only (no backend yet)
+- Email signup → `POST /api/subscribe` → Resend (contact + notify mousetrapjenga@gmail.com & brian@broompeltz.com + visitor confirmation)
+- Env: `RESEND_API_KEY`, `RESEND_FROM`, `NOTIFY_EMAIL`, optional `RESEND_SEGMENT_ID` / `RESEND_REPLY_TO` (see `.env.example`)
 - Original is Squarespace; accent color ~ hsl(354, 99%, 47%)
 - Rules section distilled from archived Google Sites content in `archive/mousetrapjenga-old/`
 - Logo = original circular mark (`public/logo-mark.png`, cropped from logo.png) + “mousetrapjenga” text wordmark
