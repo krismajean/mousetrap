@@ -1,0 +1,163 @@
+.tips {
+  background: var(--black);
+  color: var(--white);
+  padding: clamp(3rem, 8vw, 6rem) 0 clamp(4rem, 10vw, 7rem);
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.inner {
+  max-width: 2560px;
+  margin: 0 auto;
+  padding: 0 var(--page-padding);
+  display: grid;
+  gap: clamp(2.5rem, 6vw, 4rem);
+}
+
+.intro {
+  max-width: 36rem;
+}
+
+.eyebrow {
+  margin: 0 0 0.75rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.85;
+}
+
+.heading {
+  margin: 0;
+  font-size: clamp(1.5rem, 3.2vw, 2.2rem);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
+
+.subheading {
+  margin: 0 0 0.75rem;
+  font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+.gear,
+.setting {
+  max-width: 40rem;
+}
+
+.required {
+  margin: 0 0 1rem;
+  font-size: 1.15rem;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.optionalLabel {
+  margin: 0 0 0.5rem;
+  font-size: 0.8rem;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  opacity: 0.55;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: grid;
+  gap: 0.7rem;
+}
+
+.list li {
+  position: relative;
+  padding-left: 1.15rem;
+  font-size: 1rem;
+  line-height: 1.6;
+  opacity: 0.88;
+}
+
+.list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.65em;
+  width: 0.35rem;
+  height: 0.35rem;
+  background: var(--accent);
+  opacity: 0.85;
+}
+
+.video {
+  margin: 1.25rem 0 0;
+  font-size: 1rem;
+  line-height: 1.5;
+  opacity: 0.85;
+}
+
+.video a {
+  color: var(--light-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.18em;
+}
+
+.video a:hover {
+  color: var(--white);
+}
+
+.tipGrid {
+  display: grid;
+  gap: clamp(2rem, 4vw, 3rem);
+}
+
+.tipGroup {
+  max-width: 36rem;
+}
+
+@media (min-width: 900px) {
+  .intro,
+  .gear,
+  .setting {
+    margin-left: auto;
+    text-align: right;
+  }
+
+  .list li {
+    padding-left: 0;
+    padding-right: 1.15rem;
+  }
+
+  .list li::before {
+    left: auto;
+    right: 0;
+  }
+
+  .tipGrid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+
+  .tipGroup {
+    max-width: none;
+  }
+
+  .tipGroup:nth-child(odd) {
+    text-align: left;
+  }
+
+  .tipGroup:nth-child(odd) .list li {
+    padding-right: 0;
+    padding-left: 1.15rem;
+  }
+
+  .tipGroup:nth-child(odd) .list li::before {
+    right: auto;
+    left: 0;
+  }
+
+  .tipGroup:nth-child(even) {
+    text-align: right;
+  }
+}
