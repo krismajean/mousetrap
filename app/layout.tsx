@@ -13,25 +13,17 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://unavoidablyunsafe.com"),
-  title: "unavoidably unsafe",
+  metadataBase: new URL("https://www.mousetrapjenga.com"),
+  title: "mousetrapjenga",
   description:
-    "Bond over the mild discomfort of live traps and personal challenges in a quest to build a tower without too much injury.",
+    "A patient adrenaline game for silly people — stack live mousetraps until the tower goes boom.",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
-    title: "unavoidably unsafe",
-    url: "https://unavoidablyunsafe.com",
-    siteName: "unavoidably unsafe",
-    images: [
-      {
-        url: "/logo.png",
-        width: 1500,
-        height: 407,
-        alt: "unavoidably unsafe logo",
-      },
-    ],
+    title: "mousetrapjenga",
+    url: "https://www.mousetrapjenga.com",
+    siteName: "mousetrapjenga",
     type: "website",
   },
 };

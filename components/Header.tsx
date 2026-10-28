@@ -1,18 +1,11 @@
-import Image from "next/image";
+import { Logo } from "./Logo";
 import styles from "./Header.module.css";
 
 export function Header() {
   return (
     <header className={styles.header}>
-      <a href="/" aria-label="unavoidably unsafe home">
-        <Image
-          src="/logo.png"
-          alt="unavoidably unsafe"
-          width={400}
-          height={101}
-          className={styles.headerLogo}
-          priority
-        />
+      <a href="/" className={styles.brandLink} aria-label="mousetrapjenga home">
+        <Logo />
       </a>
 
       <div className={styles.headerSocial}>

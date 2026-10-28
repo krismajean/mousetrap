@@ -9,9 +9,14 @@
   background: transparent;
 }
 
-.headerLogo {
-  height: 101px;
-  width: auto;
+.brandLink {
+  display: inline-flex;
+  align-items: center;
+  transition: opacity 0.2s ease;
+}
+
+.brandLink:hover {
+  opacity: 0.85;
 }
 
 .headerSocial {
@@ -39,7 +44,4 @@
     padding: 6vw var(--page-padding);
   }
 
-  .headerLogo {
-    height: 30px;
-  }
 }
