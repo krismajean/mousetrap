@@ -76,15 +76,8 @@ export function Hero() {
           </h2>
 
           <h4 className={styles.subheadline}>
-            Bond over the <span className="highlight-strike">terror</span> mild
-            discomfort of live traps and personal challenges in a quest to build a
-            tower without <span className="highlight-underline">too</span> much
-            injury.
+            Stack live traps into a tower.
           </h4>
-
-          <p className={styles.emailPrompt}>
-            Share your email and we&apos;ll let you know when we have rad updates.
-          </p>
 
           <form className={formStyles.form} onSubmit={handleSubmit}>
             <label htmlFor="email" className="sr-only">

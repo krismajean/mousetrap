@@ -2,13 +2,13 @@
 alwaysApply: true
 ---
 
-# mouse_trap / unavoidably unsafe clone
+# mouse_trap / mousetrapjenga
 
 ## Path
 `/Users/bbp/mouse_trap`
 
 ## Purpose
-Clone of https://unavoidablyunsafe.com/ — landing page for "unavoidably unsafe" game/product with email signup.
+Landing page for mousetrapjenga (patient adrenaline game). Originally cloned from unavoidablyunsafe.com layout/styling; brand and copy evolving for mousetrapjenga.
 
 ## Stack
 - Next.js 15 (App Router)
@@ -17,18 +17,19 @@ Clone of https://unavoidablyunsafe.com/ — landing page for "unavoidably unsafe
 - Deploy target: Vercel
 
 ## Conventions
-- Match original site copy, layout, and styling (Poppins, red accent highlights, hero background image)
-- Keep components in `components/`, page in `app/`
-- Static assets in `public/`
+- Poppins, red accent highlights (~ hsl(354, 99%, 47%)), full-bleed hero
+- Components in `components/`, page in `app/`, static assets in `public/`
 
 ## Active work
 - Deployed on Vercel, linked to GitHub `krismajean/mousetrap`
+- Resend signup live on production (`RESEND_API_KEY` + `RESEND_SEGMENT_ID` set; production-only for secrets)
 
 ## Notes
-- Production URL: https://unavoidably-unsafe.vercel.app / https://www.mousetrapjenga.com
-- Vercel project: `unavoidably-unsafe` (team `krismajeans-projects`)
+- Custom domains: https://www.mousetrapjenga.com / https://mousetrapjenga.com
+- Vercel project: `mousetrapjenga` (id `prj_ucURJctJx6RN1Ce5qnTbG1S8m6Wc`, team `krismajeans-projects`)
+- Legacy Vercel hostname may still show as `unavoidably-unsafe.vercel.app` until aliases refresh
 - Email signup → `POST /api/subscribe` → Resend (contact + notify mousetrapjenga@gmail.com & brian@broompeltz.com + visitor confirmation)
+- Public contact `hello@mousetrapjenga.com` is Resend inbound. `POST /api/inbound` forwards it to the same notify inboxes. MX is `receive.forge.rmta.net`.
 - Env: `RESEND_API_KEY`, `RESEND_FROM`, `NOTIFY_EMAIL`, optional `RESEND_SEGMENT_ID` / `RESEND_REPLY_TO` (see `.env.example`)
-- Original is Squarespace; accent color ~ hsl(354, 99%, 47%)
-- Rules section distilled from archived Google Sites content in `archive/mousetrapjenga-old/`
-- Logo = original circular mark (`public/logo-mark.png`, cropped from logo.png) + “mousetrapjenga” text wordmark
+- Rules/tips from archived Google Sites in `archive/mousetrapjenga-old/`
+- Logo = original circular mark (`public/logo-mark.png`) + “mousetrapjenga” wordmark

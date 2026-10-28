@@ -3,21 +3,18 @@ import styles from "./Rules.module.css";
 
 const playSteps = [
   {
-    title: "Stack",
-    body: "Take turns placing live mousetraps. Each trap must touch at least two others.",
+    title: "Set Trap and Stack",
+    body: "Take turns placing live mousetraps. Each trap has to touch at least two other traps. Any part of the trap counts.",
   },
   {
     title: "Keep going",
-    body: "Play until you run out of traps — or the tower falls and explodes.",
-  },
-  {
-    title: "Have fun",
-    body: "That's it. A patient adrenaline game for silly people.",
+    body: "Play until the tower explodes. Run out of traps? Take ones still touching the playing surface and place them back on the tower so they no longer touch it.",
   },
 ];
 
 const careNotes = [
-  "If a few traps fall on your turn, still finish the move.",
+  "If the pile shifts, or only a few traps go off and most of the structure is still up, keep going — if the group agrees the game is still live.",
+  "If your trap snaps while you're setting it and the rest of the stack is fine, go again.",
   "Don't move other people's set traps. Play with what you've got.",
   "Keep kitties and tiny humans at a distance — fuzzy mittens and little fingers have a bad time.",
   "After a boom, some traps may still be set. Pick them up carefully — that's when most people get snapped.",
@@ -30,8 +27,7 @@ export function Rules() {
         <header className={styles.intro}>
           <p className={styles.eyebrow}>How to play</p>
           <h2 id="rules-heading" className={styles.heading}>
-            The rules are short.{" "}
-            <span className="highlight-underline">The boom</span> is optional.
+            The rules are short.
           </h2>
         </header>
 
@@ -53,21 +49,18 @@ export function Rules() {
           <div className={styles.splitText}>
             <h3 className={styles.subheading}>How to start</h3>
             <p className={styles.body}>
-              Optional: lay down a towel or silicone baking pad for a stable
-              base. Place two traps touching each other — tall or short a-frame
-              are common. Different setups lead to different games.
+              Place two live traps to start. An A-frame is a common start.
+            </p>
+            <p className={styles.body}>
+              Optional: use a mat, towel, or silicone baking pad for a more
+              stable base. Start however you want. Taller starts go higher
+              quicker.
             </p>
 
-            <h3 className={styles.subheading}>How do you win?</h3>
+            <h3 className={styles.subheading}>How it ends</h3>
             <p className={styles.body}>
-              You don&apos;t win at sandcastles. This is like that, with a wee
-              more excitement — closer to skateboarding. Everyone who shows up
-              wins the day. Go for height. Set people up. Try bold moves.
-            </p>
-            <p className={styles.body}>
-              You{" "}
-              <span className="highlight-strike">definitely</span> lose if
-              you&apos;re a jerk. When the stack goes boom, celebrate.
+              When the pile explodes. The loser set it off. The winner placed
+              the tallest trap.
             </p>
           </div>
 

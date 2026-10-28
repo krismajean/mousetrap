@@ -5,7 +5,7 @@ export function Footer() {
     <footer className={styles.footer}>
       <div className={styles.footerInner}>
         <p className={styles.footerEmail}>
-          <a href="mailto:unavoidablyunsafe@gmail.com">unavoidablyunsafe@gmail.com</a>
+          <a href="mailto:hello@mousetrapjenga.com">hello@mousetrapjenga.com</a>
         </p>
         <p className={styles.copyright}>
           All Rights Reserved © 2023 Skillfull Sillness, LLC
