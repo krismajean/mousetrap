@@ -1,0 +1,104 @@
+# Mouse Trap Jenga
+
+> Archived from https://www.mousetrapjenga.com/ on 2026-10-27  
+> Source: Google Sites
+
+**Tagline:** A patient adrenaline game for silly people
+
+---
+
+## How to Play
+
+- Take turns stacking live mousetraps where each trap is touching at least two other traps
+- Keep going till you are out of traps or it falls down and explodes
+- That's it. Have fun
+
+## How to Start
+
+- Optional: Put a towel or silicone baking pad down. It is mighty handy for ensuring you have stable base.
+- Place two traps touching each other. Different configurations lead to different games. Tall or short a-frame are common.
+
+## How do you win!?
+
+- Remember building sandcastles at the beach. You don't win at sandcastles. This is like that but with a wee more excitement. It's more like skateboarding. Everyone who shows up wins the day. Some people play it safe and others go big and get cheers.
+- Set up people for moves. Go for height. Try bold and creative moves.
+- Everybody who plays wins. Or maybe nobody wins and there is just one loser. That's up to you. Whatever helps you sleep.
+- You definitely lose if you're a jerk. For example, intentionally bumping people when they are placing their trap or any bad juju is discouraged.
+- When the stack goes boom, celebrate and congratulate each other on a good game.
+- If you use all the traps:
+  - Expert-level: start to take the all down.
+  - Good-video: slo-mo record tossing something in the stack
+
+*Caption:* This is what winning looks like
+
+## Special Situations
+
+- If during your turn a few traps fall, still complete your turn.
+- Generally, don't move other people's set traps. Play with what you got.
+- Earthquakes and asteroids are fair play.
+
+## Get your gear
+
+- Box of 48 Traps
+- Optional:
+  - Silicone Baking Pad
+  - Safety Glasses (mostly for show)
+  - Suitcase if you want to be classier than a cardboard box
+
+## Pro-tips
+
+### Techniques
+
+- Kick stand;
+
+### Kitties and Kiddos
+
+- Kitties may want to get close with their lil' fuzzy mittens and have a bad time. Keep animals at a distance
+- Kiddos may also want to get close with their lil' fingers and could have a bad time. Keep tiny humans at a distance.
+
+### After a boom
+
+- After an detonation - some of the traps may still be set. Be careful as you pick traps up - this is the most common time people get snapped.
+- Maybe play again - or call it a good round.
+
+### Placing the traps
+
+- Exhale slowly like you're in the special forces - it will relax your hands and increase your focus.
+- 3 points define a plane. Attend to if the center of mass is supported or it'll fall.
+
+### Photos
+
+- People are generally completely absorbed in their move. This makes for good candid photos. Remember to have fun and smile :)
+- Often people want to take photos and not play. That's cool. Thanks for documenting the silliness.
+
+### Not difficult enough?
+
+- Use your non-dominant hand.
+- Set a timer for moves.
+- Use rat traps with contact explosives.
+
+## Setting the traps
+
+- For many, this is the first time they've ever set a mousetrap. Excellent opportunity to learn how to efficiently set a mousetrap. You got what it takes. With a little practice you'll be setting up a half-dozen traps in a minute.
+- Assemble set traps in an ordered manner with the trigger pointing away from you. This decreases the likelihood of an accidental snap.
+- It's like a knife. One end is safer to grab than the other. Be mindful of the snappy part.
+- Also, they are not as hair-trigger as you may think. Place a trap upside down to prove this. And then even add a few more traps on top.
+
+**Embedded video:** [How To Set A Mouse Trap - Ace Hardware](https://www.youtube.com/watch?v=qiji5OOYuqw)
+
+---
+
+© 2021 Skillful Silliness
+
+## Archived assets
+
+| File | Description |
+|------|-------------|
+| `screenshot-fullpage.png` | Browser screenshot (top of page) |
+| `screenshot-bottom.png` | Browser screenshot (bottom / video section) |
+| `images/01-hero-stack.jpg` | Hero / carousel photo (2381×1699) |
+| `images/02-winning-looks-like.jpg` | "This is what winning looks like" photo |
+| `images/03-hero-bg.jpg` | Additional hero photo (2448×3264) |
+| `index.raw.html` | Raw Google Sites HTML shell |
+| `page-text.txt` | Plain-text dump of rendered page |
+| `urls.txt` | Original asset / video URLs |

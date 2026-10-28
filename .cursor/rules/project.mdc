@@ -22,8 +22,12 @@ Clone of https://unavoidablyunsafe.com/ — landing page for "unavoidably unsafe
 - Static assets in `public/`
 
 ## Active work
-- Initial clone built and ready for Vercel deployment
+- Deployed on Vercel, linked to GitHub `krismajean/mousetrap`
 
 ## Notes
+- Production URL: https://unavoidably-unsafe.vercel.app / https://www.mousetrapjenga.com
+- Vercel project: `unavoidably-unsafe` (team `krismajeans-projects`)
 - Email form is client-side only (no backend yet)
 - Original is Squarespace; accent color ~ hsl(354, 99%, 47%)
+- Rules section distilled from archived Google Sites content in `archive/mousetrapjenga-old/`
+- Logo = original circular mark (`public/logo-mark.png`, cropped from logo.png) + “mousetrapjenga” text wordmark

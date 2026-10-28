@@ -1,0 +1,12 @@
+# Mouse Trap Jenga — archived source URLs
+# Captured 2026-10-27 from https://www.mousetrapjenga.com/
+
+SITE=https://www.mousetrapjenga.com/
+YOUTUBE=https://www.youtube.com/watch?v=qiji5OOYuqw
+YOUTUBE_EMBED=https://www.youtube.com/embed/qiji5OOYuqw
+YOUTUBE_TITLE=How To Set A Mouse Trap - Ace Hardware
+
+# Content images (Google Sites / googleusercontent)
+HERO_STACK=https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vnymLpTTyTeZEaGqqpJHTNdfjT1x3LCzethtpaPu3B3sySMP_HJQ09-FmzpttR_w0ndflfrZPjkzUJJF4Umb9AntIPIfwGeQBauM1ndGoWLrFCO3-NdkRV6G3AG1ZJG5vwf5KPO1bpenlbxiZpLWzyeTMhApzZ6yVRCB14c4XZ78fecGlqiSq2fRLB2AlugwSDdWI317DH1p0zr3mxVuKaJhy981czNaZ-ahA=w2500
+WINNING=https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vDKGCQAdt6Ny1tV5khuMC5LOZ03bRPb6zMHuWd9vrtp-Ewqo8SXiQzclQ2vtPgMb-Y8GQItIdsE8sSGiktHpGfePrbvXm9lAdn4peFyuOMAXAYuLEgr2-2fecAExrG08BCX-WZzCNtAr17yK-JQvvEIz-q21u2gpd5F7_SLYpjb-_79u4bW_DoQlEuaAnYCzvuSH3rZq1I5qTDgTdjK2QxtIZZk1NfoN91mraOpzU=w2500
+HERO_BG=https://lh7-us.googleusercontent.com/sitesv-images-rt/AMxu72vX_f1sEqQ_AcVceN9WCCQuuZ6bJk2RLx9aQKvnPzRsd4yGulbWLZwTk9R9ae7cDOckdG4Tnp80eK7OEvkZVpRFEUu9ps7wrBvqfCMTr4aeWqHrbVDqXHzppc96lX7U76BKbV7LfsEpp6OExt_YLqXEdV87go7hDL2-EUycqNJ8NmiKkAupaZZLlMc7=w2500
