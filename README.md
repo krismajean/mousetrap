@@ -1,6 +1,6 @@
-# unavoidably unsafe — clone
+# mousetrapjenga
 
-A Next.js clone of [unavoidablyunsafe.com](https://unavoidablyunsafe.com/), built for deployment on Vercel.
+Landing page for [mousetrapjenga.com](https://www.mousetrapjenga.com) — deployed on Vercel as project `mousetrapjenga`.
 
 ## Develop
 
@@ -11,17 +11,15 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000).
 
-## Deploy to Vercel
+Copy `.env.example` → `.env.local` for Resend signup locally.
 
-```bash
-npm i -g vercel
-vercel
-```
+## Deploy
 
-Or connect this repo in the [Vercel dashboard](https://vercel.com/new).
+GitHub `krismajean/mousetrap` → Vercel project `mousetrapjenga` (team `krismajeans-projects`).
 
 ## Stack
 
 - Next.js 15 (App Router)
 - TypeScript
 - CSS Modules
+- Resend (email signup)
