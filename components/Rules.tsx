@@ -14,6 +14,10 @@ const playSteps = [
     title: "Keep going",
     body: "Play until the tower explodes. Run out of traps? Take ones still touching the playing surface and place them back on the tower so they no longer touch it.",
   },
+  {
+    title: "How it ends",
+    body: "When the pile explodes. The loser set it off. The winner placed the tallest trap.",
+  },
 ];
 
 const careNotes = [
@@ -35,49 +39,30 @@ export function Rules() {
           </h2>
         </header>
 
-        <ol className={styles.playList}>
-          {playSteps.map((step, index) => (
-            <li key={step.title} className={styles.playItem}>
-              <span className={styles.playIndex} aria-hidden="true">
-                {String(index + 1).padStart(2, "0")}
-              </span>
-              <div className={styles.playCopy}>
-                <h3 className={styles.playTitle}>{step.title}</h3>
-                <p className={styles.playBody}>{step.body}</p>
-              </div>
-            </li>
-          ))}
-        </ol>
-
-        <div className={styles.split}>
-          <div className={styles.splitText}>
-            <h3 className={styles.subheading}>How to start</h3>
-            <p className={styles.body}>
-              Optional: use a mat, towel, or silicone baking pad for a more
-              stable base. Start however you want. Taller starts go higher
-              quicker.
-            </p>
-
-            <h3 className={styles.subheading}>How it ends</h3>
-            <p className={styles.body}>
-              When the pile explodes. The loser set it off. The winner placed
-              the tallest trap.
-            </p>
-          </div>
-
+        <div className={styles.playStage}>
           <figure className={styles.figure}>
             <Image
               src="/winning.jpg"
               alt="Player carefully stacking live mousetraps into a tower"
-              width={900}
-              height={1200}
+              fill
               className={styles.figureImage}
-              sizes="(max-width: 899px) 100vw, 20rem"
+              sizes="(max-width: 899px) 100vw, 50vw"
             />
-            <figcaption className={styles.caption}>
-              This is what winning looks like
-            </figcaption>
           </figure>
+
+          <ol className={styles.playList}>
+            {playSteps.map((step, index) => (
+              <li key={step.title} className={styles.playItem}>
+                <span className={styles.playIndex} aria-hidden="true">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <div className={styles.playCopy}>
+                  <h3 className={styles.playTitle}>{step.title}</h3>
+                  <p className={styles.playBody}>{step.body}</p>
+                </div>
+              </li>
+            ))}
+          </ol>
         </div>
 
         <div className={styles.care}>
