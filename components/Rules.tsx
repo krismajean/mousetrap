@@ -3,8 +3,12 @@ import styles from "./Rules.module.css";
 
 const playSteps = [
   {
+    title: "Start",
+    body: "Place two live traps touching each other. An A-frame is a common start.",
+  },
+  {
     title: "Set Trap and Stack",
-    body: "Take turns placing live mousetraps. Each trap has to touch at least two other traps. Any part of the trap counts.",
+    body: "Take turns placing live mousetraps. Each new trap has to touch at least two other traps. Any part of the trap counts.",
   },
   {
     title: "Keep going",
@@ -49,9 +53,6 @@ export function Rules() {
           <div className={styles.splitText}>
             <h3 className={styles.subheading}>How to start</h3>
             <p className={styles.body}>
-              Place two live traps to start. An A-frame is a common start.
-            </p>
-            <p className={styles.body}>
               Optional: use a mat, towel, or silicone baking pad for a more
               stable base. Start however you want. Taller starts go higher
               quicker.
@@ -71,7 +72,7 @@ export function Rules() {
               width={900}
               height={1200}
               className={styles.figureImage}
-              sizes="(max-width: 767px) 100vw, 42vw"
+              sizes="(max-width: 899px) 100vw, 20rem"
             />
             <figcaption className={styles.caption}>
               This is what winning looks like

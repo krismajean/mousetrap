@@ -186,7 +186,11 @@
   }
 
   .split {
-    grid-template-columns: 1fr min(42vw, 28rem);
+    grid-template-columns: minmax(0, 20rem) minmax(0, 36rem);
+    justify-content: end;
+    max-width: 60rem;
+    margin-left: auto;
+    width: 100%;
     align-items: start;
   }
 
