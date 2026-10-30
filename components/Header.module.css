@@ -9,6 +9,21 @@
   background: transparent;
 }
 
+.header::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0 0 -3rem;
+  pointer-events: none;
+  background: linear-gradient(
+    to bottom,
+    #000 0%,
+    #000 58%,
+    rgb(0 0 0 / 0.55) 80%,
+    transparent 100%
+  );
+}
+
 .brandLink {
   display: inline-flex;
   align-items: center;
